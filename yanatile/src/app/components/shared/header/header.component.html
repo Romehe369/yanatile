@@ -1,0 +1,79 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" routerLink="/">TECHHH</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Municipalidad -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">La Municipalidad</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/alcalde">Alcalde</a></li>
+            <li><a class="dropdown-item" routerLink="/regidores">Regidores</a></li>
+            <li><a class="dropdown-item" routerLink="/mvision">Misión y Visión</a></li>
+            <li><a class="dropdown-item" routerLink="/organigrama">Organigrama</a></li>
+          </ul>
+        </li>
+
+        <!-- Yanatile -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Yanatile</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/historia">Historia</a></li>
+            <li><a class="dropdown-item" routerLink="/himno">Himno al distrito</a></li>
+            <li><a class="dropdown-item" routerLink="/cpoblados">Centros Poblados</a></li>
+            <li><a class="dropdown-item" routerLink="/festividades">Festividades</a></li>
+            <li><a class="dropdown-item" routerLink="/atractivos">Atractivos</a></li>
+            <li><a class="dropdown-item" routerLink="/agricultura">Agricultura Local</a></li>
+          </ul>
+        </li>
+
+        <!-- Transparencia -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Transparencia</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/mordenanza">Ordenanzas Municipales</a></li>
+            <li><a class="dropdown-item" routerLink="/mralcaldia">Resoluciones de Alcaldía</a></li>
+            <li><a class="dropdown-item" routerLink="/mrgerencia">Resoluciones Gerenciales</a></li>
+            <li><a class="dropdown-item" routerLink="/magerenciales">Acuerdos de Concejo</a></li>
+            <li><a class="dropdown-item" routerLink="/mdgestion">Instrumentos de Gestión</a></li>
+            <li><a class="dropdown-item" target="_blank" href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=10979&id_tema=1&ver=D">Portal de Transparencia</a></li>
+            <li><a class="dropdown-item" target="_blank" href="https://www.gob.pe/institucion/muniyanatile/colecciones/46478-convocatorias-de-la-municipalidad-distrital-de-yanatile">Convocatoria CAS</a></li>
+          </ul>
+        </li>
+
+        <!-- Noticias -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/noticias">Noticias</a>
+        </li>
+
+        <!-- Servicios -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Servicios</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" target="_blank" href="https://facilita.gob.pe/t/1564">Mesa de Partes</a></li>
+            <li><a class="dropdown-item" routerLink="/mrentas">Rentas</a></li>
+            <li><a class="dropdown-item" routerLink="/mregistro">Registro Civil</a></li>
+            <li><a class="dropdown-item" routerLink="/mseguridad">Seguridad Ciudadana</a></li>
+            <li><a class="dropdown-item" routerLink="/mcodisec">CODISEC</a></li>
+            <li><a class="dropdown-item" routerLink="/mdemuna">DEMUNA</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Buscador -->
+      <form class="d-flex position-relative" role="search">
+        <input class="form-control rounded-pill pe-5" type="search" placeholder="Buscar..." aria-label="Buscar">
+        <button class="btn btn-link position-absolute end-0 top-50 translate-middle-y me-2 text-light" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
