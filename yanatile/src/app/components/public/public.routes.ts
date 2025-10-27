@@ -3,6 +3,7 @@ import { Routes } from '@angular/router';
 import { PublicComponent } from './public.component';
 import { LandingComponent } from './landing/landing.component';
 import { RegidoresComponent } from './regidores/regidores.component';
+import { MvisionComponent } from './mvision/mvision.component';
 export const public_routes: Routes = [
     {
         path: '',
@@ -13,7 +14,8 @@ export const public_routes: Routes = [
                 loadChildren: () =>
                 import('./alcalde/alcalde.routes').then(m => m.alcalde_routes)
             },
-            {   path:'regidores', component: RegidoresComponent}
+            {   path:'regidores', component: RegidoresComponent},
+            {   path:'mvision', component: MvisionComponent}
             //{ path: 'detallesVista/:producto', component: DetailsViewComponent }
         ]
     }
