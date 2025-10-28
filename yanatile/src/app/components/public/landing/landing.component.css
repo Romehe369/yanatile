@@ -1,0 +1,57 @@
+/* Header Section */
+.intro {
+  display: table;
+  width: 100%;
+  padding: 0;
+  background: url('/img/intro-bga.jpg') no-repeat center center;
+  background-color: #e5e5e5;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+.intro .overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.intro-text h1 {
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  font-size: 8em;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.intro-text a.btn {
+  background-color: #a7c44c;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.intro-text a.btn:hover {
+  background-color: #8cb03c;
+  transform: translateY(-3px);
+}
+
+/* Imagen y texto principal */
+.text-secondary {
+  color: #555 !important;
+}
+
+img.img-fluid {
+  border-radius: 1rem;
+  max-width: 90%;
+  transition: transform 0.3s ease;
+}
+
+img.img-fluid:hover {
+  transform: scale(1.03);
+}
