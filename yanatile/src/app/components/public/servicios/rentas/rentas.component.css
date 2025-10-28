@@ -1,0 +1,28 @@
+.card {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.list-group-item {
+  border: none;
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.accordion-button {
+  background-color: #fff;
+  color: #198754;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e9f7ef;
+  color: #145c32;
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #fff;
+  border-top: 1px solid #dee2e6;
+}
