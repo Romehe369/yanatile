@@ -20,7 +20,6 @@ export const public_routes: Routes = [
             {   path:'mvision', component: MvisionComponent},
             {   path:'historia', component: HistoriaComponent},
             {   path:'himno', component: HimnodistritalComponent}
-            //{ path: 'detallesVista/:producto', component: DetailsViewComponent }
         ]
     }
 ];
