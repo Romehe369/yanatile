@@ -1,99 +1,108 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky-top border-bottom border-light">
-    <div class="container-fluid px-3 px-lg-5">
-        <a class="navbar-brand fw-bolder fs-5 d-flex align-items-center" routerLink="/">
-            <i class="fas fa-landmark me-2 text-info"></i> 
-            MUNI YANATILE
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" 
-                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg bg-white shadow-sm border-bottom border-light">
+  <div class="container-fluid px-3 px-lg-5">
+    
+    <!-- 🔹 LOGO + TÍTULO -->
+    <a class="navbar-brand fw-bolder fs-5 d-flex align-items-center text-dark" routerLink="/">
+      <img src="logoes.png" alt="Logo Municipalidad" class="me-2" style="height:40px; width:auto;">
+    </a>
 
-        <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                
-                <li class="nav-item dropdown me-lg-2">
-                    <a class="nav-link dropdown-toggle" href="#" id="municipalidadDropdown" role="button" 
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-university me-1"></i> La Municipalidad
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="municipalidadDropdown">
-                        <li><a class="dropdown-item py-2" routerLink="/alcalde"><i class="fas fa-user-tie me-2"></i>Alcalde</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/regidores"><i class="fas fa-users me-2"></i>Regidores</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/mvision"><i class="fas fa-eye me-2"></i>Misión y Visión</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/organigrama"><i class="fas fa-sitemap me-2"></i>Organigrama</a></li>
-                    </ul>
-                </li>
+    <!-- 🔹 Botón de menú responsive -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <li class="nav-item dropdown me-lg-2">
-                    <a class="nav-link dropdown-toggle" href="#" id="yanatileDropdown" role="button" 
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-map-marked-alt me-1"></i> Yanatile
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="yanatileDropdown">
-                        <li><a class="dropdown-item py-2" routerLink="/historia"><i class="fas fa-book me-2"></i>Historia</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/himno"><i class="fas fa-music me-2"></i>Himno al distrito</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/cpoblados"><i class="fas fa-home me-2"></i>Centros Poblados</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/festividades"><i class="fas fa-calendar-alt me-2"></i>Festividades</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/atractivos"><i class="fas fa-mountain me-2"></i>Atractivos</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/agricultura"><i class="fas fa-tractor me-2"></i>Agricultura Local</a></li>
-                    </ul>
-                </li>
+    <!-- 🔹 Menú -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center fw-medium">
 
-                <li class="nav-item dropdown me-lg-2">
-                    <a class="nav-link dropdown-toggle" href="#" id="transparenciaDropdown" role="button" 
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-file-contract me-1"></i> Transparencia
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="transparenciaDropdown">
-                        <li><a class="dropdown-item py-2" routerLink="/mordenanza"><i class="fas fa-gavel me-2"></i>Ordenanzas Municipales</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/mralcaldia"><i class="fas fa-stamp me-2"></i>Resoluciones de Alcaldía</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/mrgerencia"><i class="fas fa-file-signature me-2"></i>Resoluciones Gerenciales</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/magerenciales"><i class="fas fa-handshake me-2"></i>Acuerdos de Concejo</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/mdgestion"><i class="fas fa-tasks me-2"></i>Instrumentos de Gestión</a></li>
-                        <li><hr class="dropdown-divider bg-secondary"></li>
-                        <li><a class="dropdown-item py-2 text-info" target="_blank" href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=10979&id_tema=1&ver=D">
-                            <i class="fas fa-external-link-alt me-2"></i>Portal de Transparencia
-                        </a></li>
-                        <li><a class="dropdown-item py-2 text-info" target="_blank" href="https://www.gob.pe/institucion/muniyanatile/colecciones/46478-convocatorias-de-la-municipalidad-distrital-de-yanatile">
-                            <i class="fas fa-bullhorn me-2"></i>Convocatoria CAS
-                        </a></li>
-                    </ul>
-                </li>
+        <!-- La Municipalidad -->
+        <li class="nav-item dropdown me-lg-3">
+          <a class="nav-link dropdown-toggle text-dark" href="#" id="municipalidadDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-bank2 me-1"></i> La Municipalidad
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/alcalde"><i class="bi bi-person-vcard me-2"></i>Alcalde</a></li>
+            <li><a class="dropdown-item" routerLink="/regidores"><i class="bi bi-people me-2"></i>Regidores</a></li>
+            <li><a class="dropdown-item" routerLink="/mvision"><i class="bi bi-eye me-2"></i>Misión y Visión</a></li>
+            <li><a class="dropdown-item" routerLink="/organigrama"><i class="bi bi-diagram-3 me-2"></i>Organigrama</a></li>
+          </ul>
+        </li>
 
-                <li class="nav-item me-lg-2">
-                    <a class="nav-link" routerLink="/noticias">
-                        <i class="fas fa-newspaper me-1"></i> Noticias
-                    </a>
-                </li>
+        <!-- Yanatile -->
+        <li class="nav-item dropdown me-lg-3">
+          <a class="nav-link dropdown-toggle text-dark" href="#" id="yanatileDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-geo-alt me-1"></i> Yanatile
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/historia"><i class="bi bi-book me-2"></i>Historia</a></li>
+            <li><a class="dropdown-item" routerLink="/himno"><i class="bi bi-music-note-beamed me-2"></i>Himno</a></li>
+            <li><a class="dropdown-item" routerLink="/centros-poblados"><i class="bi bi-house me-2"></i>Centros Poblados</a></li>
+            <li><a class="dropdown-item" routerLink="/festividades"><i class="bi bi-calendar-event me-2"></i>Festividades</a></li>
+            <li><a class="dropdown-item" routerLink="/atractivos"><i class="bi bi-tree me-2"></i>Atractivos</a></li>
+            <li><a class="dropdown-item" routerLink="/agricultura-local"><i class="bi bi-flower1 me-2"></i>Agricultura Local</a></li>
+          </ul>
+        </li>
 
-                <li class="nav-item dropdown me-lg-2">
-                    <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" 
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-concierge-bell me-1"></i> Servicios
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="serviciosDropdown">
-                        <li><a class="dropdown-item py-2 text-info" target="_blank" href="https://facilita.gob.pe/t/1564">
-                            <i class="fas fa-inbox me-2"></i>Mesa de Partes
-                        </a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/servicios/rentas"><i class="fas fa-money-bill-wave me-2"></i>Rentas</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/servicios/registro-civil"><i class="fas fa-id-card me-2"></i>Registro Civil</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/servicios/seguridad-ciudadana"><i class="fas fa-shield-alt me-2"></i>Seguridad Ciudadana</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/servicios/codisec"><i class="fas fa-user-shield me-2"></i>CODISEC</a></li>
-                        <li><a class="dropdown-item py-2" routerLink="/servicios/demuna"><i class="fas fa-child me-2"></i>DEMUNA</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <!-- Transparencia -->
+        <li class="nav-item dropdown me-lg-3">
+          <a class="nav-link dropdown-toggle text-dark" href="#" id="transparenciaDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-file-earmark-text me-1"></i> Transparencia
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/mordenanza"><i class="bi bi-hammer me-2"></i>Ordenanzas Municipales</a></li>
+            <li><a class="dropdown-item" routerLink="/mralcaldia"><i class="bi bi-patch-check me-2"></i>Resoluciones de Alcaldía</a></li>
+            <li><a class="dropdown-item" routerLink="/mrgerencia"><i class="bi bi-file-earmark-ruled me-2"></i>Resoluciones Gerenciales</a></li>
+            <li><a class="dropdown-item" routerLink="/magerenciales"><i class="bi bi-hand-thumbs-up me-2"></i>Acuerdos de Concejo</a></li>
+            <li><a class="dropdown-item" routerLink="/mdgestion"><i class="bi bi-tools me-2"></i>Instrumentos de Gestión</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-primary" target="_blank" href="https://www.transparencia.gob.pe/">
+              <i class="bi bi-box-arrow-up-right me-2"></i>Portal de Transparencia
+            </a></li>
+            <li><a class="dropdown-item text-primary" target="_blank" href="https://www.gob.pe/institucion/muniyanatile">
+              <i class="bi bi-megaphone me-2"></i>Convocatoria CAS
+            </a></li>
+          </ul>
+        </li>
 
-            <form class="d-flex my-2 my-lg-0" role="search">
-                <div class="input-group">
-                    <input class="form-control form-control-sm border-0" type="search" placeholder="Buscar..." aria-label="Buscar" style="border-radius: 0.25rem 0 0 0.25rem;">
-                    <button class="btn btn-outline-light btn-sm" type="submit" style="border-radius: 0 0.25rem 0.25rem 0;">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </form>
+        <!-- Noticias -->
+        <li class="nav-item me-lg-3">
+          <a class="nav-link text-dark" routerLink="/noticias">
+            <i class="bi bi-newspaper me-1"></i> Noticias
+          </a>
+        </li>
+
+        <!-- Servicios -->
+        <li class="nav-item dropdown me-lg-3">
+          <a class="nav-link dropdown-toggle text-dark" href="#" id="serviciosDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-gear me-1"></i> Servicios
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item text-primary" target="_blank" href="https://facilita.gob.pe/t/1564">
+              <i class="bi bi-envelope-paper me-2"></i>Mesa de Partes
+            </a></li>
+            <li><a class="dropdown-item" routerLink="/servicios/rentas"><i class="bi bi-cash-coin me-2"></i>Rentas</a></li>
+            <li><a class="dropdown-item" routerLink="/servicios/registro-civil"><i class="bi bi-person-badge me-2"></i>Registro Civil</a></li>
+            <li><a class="dropdown-item" routerLink="/servicios/seguridad-ciudadana"><i class="bi bi-shield-check me-2"></i>Seguridad Ciudadana</a></li>
+            <li><a class="dropdown-item" routerLink="/servicios/codisec"><i class="bi bi-person-lock me-2"></i>CODISEC</a></li>
+            <li><a class="dropdown-item" routerLink="/servicios/demuna"><i class="bi bi-person-hearts me-2"></i>DEMUNA</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- 🔹 Buscador -->
+      <form class="d-flex ms-lg-3" role="search">
+        <div class="input-group">
+          <input class="form-control form-control-sm border" type="search" placeholder="Buscar..." aria-label="Buscar">
+          <button class="btn btn-outline-secondary btn-sm" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
         </div>
+      </form>
     </div>
+  </div>
 </nav>

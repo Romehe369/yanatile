@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { ImgnavComponent } from "../imgnav/imgnav.component";
 
 @Component({
   selector: 'app-alcalde',
-  imports: [],
+  imports: [ImgnavComponent],
   templateUrl: './alcalde.component.html',
   styleUrl: './alcalde.component.css',
 })

@@ -1,0 +1,20 @@
+ h1 {
+      font-weight: 700;
+      color: #222;
+    }
+    h3 {
+      font-weight: 600;
+    }
+    .section-icon {
+      font-size: 2rem;
+      color: #5a7c58;
+      margin-right: 10px;
+    }
+    .carousel-item img {
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .bi {
+      vertical-align: middle;
+    }

@@ -6,7 +6,7 @@
         <div class="col-lg-10 intro-text py-5">
           <p class="fs-3 fw-light text-uppercase mb-2">Municipalidad Distrital</p>
           <h1 class="display-1 fw-bold mb-4 text-light">Yanatile</h1>
-          <a href="#about" class="btn btn-lg btn-primary rounded-pill shadow-sm px-5 py-3">
+          <a routerLink="/historia" class="btn btn-lg btn-primary rounded-pill shadow-sm px-5 py-3">
             Descubre nuestra historia
           </a>
         </div>
@@ -14,7 +14,7 @@
     </div>
   </div>
 </header>
-
+<app-menus></app-menus>
 <!-- Sección de Bienvenida -->
 <div class="container my-5 py-4">
   <div class="row align-items-center g-5">
@@ -31,7 +31,7 @@
         <p class="fs-5 text-muted mb-1">ALCALDE</p>
         <h5 class="text-secondary text-uppercase mb-3">¡Un Gobierno del Pueblo...!</h5>
         <p class="text-muted">Gestión 2023-2026</p>
-        <a href="#" class="btn btn-outline-primary btn-lg rounded-pill mt-3 shadow-sm">
+        <a routerLink="/alcalde" class="btn btn-outline-primary btn-lg rounded-pill mt-3 shadow-sm">
           Ver más
         </a>
       </div>
@@ -42,80 +42,96 @@
     </div>
   </div>
 </div>
+<app-regidores></app-regidores>
 
 
 
 
+<div class="container text-center py-5"> 
+    <hr>
+    <h1 class="mb-3 text-primary">CONTACTOS DE EMERGENCIA</h1>
+    <hr>
 
-<div class="container text-center py-5">
-  <hr><h1 class="mb-3">CONTACTOS DE EMERGENCIA</h1><hr>
-  <div class="row justify-content-center">
+    <div class="row justify-content-center g-4 mt-4">
       <div class="col-md-3 col-6">
-          <div class="contact-box">
-              <img src="https://via.placeholder.com/100" alt="Policia Nacional" class="img-fluid rounded-circle">
-              <h5 class="mt-3">999 669 578</h5>
-              <p>POLICIA NACIONAL</p>
-          </div>
+        <div class="contact-box">
+          <i class="bi bi-shield-fill-exclamation contact-icon"></i>
+          <h5 class="mt-3 text-danger fw-bold">957 825 782</h5>
+          <p class="fw-semibold text-uppercase">Policía Nacional</p>
+        </div>
       </div>
+
       <div class="col-md-3 col-6">
-          <div class="contact-box">
-              <img src="https://via.placeholder.com/100" alt="Seguridad Ciudadana" class="img-fluid rounded-circle">
-              <h5 class="mt-3">999 669 578</h5>
-              <p>SEGURIDAD CIUDADANA</p>
-          </div>
+        <div class="contact-box">
+          <i class="bi bi-person-arms-up contact-icon text-success"></i>
+          <h5 class="mt-3 text-danger fw-bold">984  707 121</h5>
+          <p class="fw-semibold text-uppercase">Seguridad Ciudadana</p>
+        </div>
       </div>
+
       <div class="col-md-3 col-6">
-          <div class="contact-box">
-              <img src="https://via.placeholder.com/100" alt="Demuna" class="img-fluid rounded-circle">
-              <h5 class="mt-3">999 669 578</h5>
-              <p>DEMUNA</p>
-          </div>
+        <div class="contact-box">
+          <i class="bi bi-people-fill contact-icon text-warning"></i>
+          <h5 class="mt-3 text-danger fw-bold">978 800 188</h5>
+          <p class="fw-semibold text-uppercase">DEMUNA</p>
+        </div>
       </div>
+
       <div class="col-md-3 col-6">
-          <div class="contact-box">
-              <img src="https://via.placeholder.com/100" alt="Defensa Civil" class="img-fluid rounded-circle">
-              <h5 class="mt-3">999 669 578</h5>
-              <p>DEFENSA CIVIL</p>
-          </div>
+        <div class="contact-box">
+          <i class="bi bi-fire contact-icon text-danger"></i>
+          <h5 class="mt-3 text-danger fw-bold">966 611 576</h5>
+          <p class="fw-semibold text-uppercase">Defensa Civil</p>
+        </div>
       </div>
-  </div>
+    </div>
 </div>
 
-<div class="container my-4">
-  <div class="row">
-    <hr><h1 class="mb-3 text-center">NOTICIAS Y COMUNICADOS</h1><hr>
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="./assets/img/team-1.jpg" class="card-img-top" alt="Noticia 1">
+<!-- ==================== SECCIÓN NOTICIAS ==================== -->
+<div class="container my-5">
+  <hr class="w-50 mx-auto mb-4 border-primary border-3">
+  <h1 class="mb-4 text-center fw-bold text-primary">NOTICIAS Y COMUNICADOS</h1>
+  <hr class="w-50 mx-auto mb-5 border-primary border-3">
+
+  <div class="row g-4">
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="./assets/img/team-1.jpg" class="card-img-top rounded-top" alt="Noticia 1">
         <div class="card-body">
-          <h5 class="card-title">Municipalidad</h5>
-          <p class="card-text">Trabajo Articulado Entre La Municipalidad Y Agrorural Cusco</p>
+          <h5 class="card-title text-primary">Municipalidad</h5>
+          <p class="card-text">Trabajo Articulado Entre La Municipalidad Y Agrorural Cusco.</p>
         </div>
       </div>
     </div>
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="./assets/img/team-2.jpg" class="card-img-top" alt="Noticia 2">
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="./assets/img/team-2.jpg" class="card-img-top rounded-top" alt="Noticia 2">
         <div class="card-body">
-          <h5 class="card-title">EN MENDOZAYOQ</h5>
-          <p class="card-text">La oficina de registro civil de la municipalidad distrital de Yanatile y  RENIEC, realizo más de 102 tramites documentarios de DNI</p>
+          <h5 class="card-title text-primary">EN MENDOZAYOQ</h5>
+          <p class="card-text">
+            La oficina de registro civil de la municipalidad distrital de Yanatile y RENIEC,
+            realizó más de 102 trámites documentarios de DNI.
+          </p>
         </div>
       </div>
     </div>
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="./assets/img/team-3.jpg" class="card-img-top" alt="Noticia 3">
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="./assets/img/team-3.jpg" class="card-img-top rounded-top" alt="Noticia 3">
         <div class="card-body">
-          <h5 class="card-title">Título Noticia 3</h5>
+          <h5 class="card-title text-primary">Título Noticia 3</h5>
           <p class="card-text">Descripción breve de la noticia 3.</p>
         </div>
       </div>
     </div>
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="./assets/img/team-4.jpg" class="card-img-top" alt="Noticia 4">
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="./assets/img/team-4.jpg" class="card-img-top rounded-top" alt="Noticia 4">
         <div class="card-body">
-          <h5 class="card-title">Título Noticia 4</h5>
+          <h5 class="card-title text-primary">Título Noticia 4</h5>
           <p class="card-text">Descripción breve de la noticia 4.</p>
         </div>
       </div>
@@ -123,42 +139,53 @@
   </div>
 </div>
 
+<!-- ==================== SECCIÓN YANATILE PARA EL MUNDO ==================== -->
 <div class="container text-center py-5">
-  <hr><h1 class="mb-3">YANATILE PARA EL MUNDO</h1><hr>
-  <div class="row justify-content-center">
-      <div class="col-6">
-          <div class="contact-box">
-              <img src="https://via.placeholder.com/100" alt="Policia Nacional" class="img-fluid rounded-circle">
-              <h5 class="mt-3">999 669 578</h5>
-              <p>POLICIA NACIONAL</p>
-          </div>
+  <hr class="w-50 mx-auto mb-4 border-success border-3">
+  <h1 class="mb-3 text-success fw-bold">YANATILE PARA EL MUNDO</h1>
+  <hr class="w-50 mx-auto mb-5 border-success border-3">
+
+  <div class="row justify-content-center g-4">
+    <div class="col-md-4 col-6">
+      <div class="p-4 bg-white rounded-4 shadow-sm">
+        <i class="bi bi-shield-fill-exclamation text-primary fs-1"></i>
+        <h5 class="mt-3 fw-bold">999 669 578</h5>
+        <p class="text-uppercase fw-semibold text-muted">Policía Nacional</p>
       </div>
-      <div class="col-6">
-          <div class="contact-box">
-              <img src="https://via.placeholder.com/100" alt="Seguridad Ciudadana" class="img-fluid rounded-circle">
-              <h5 class="mt-3">999 669 578</h5>
-              <p>SEGURIDAD CIUDADANA</p>
-          </div>
+    </div>
+
+    <div class="col-md-4 col-6">
+      <div class="p-4 bg-white rounded-4 shadow-sm">
+        <i class="bi bi-person-arms-up text-success fs-1"></i>
+        <h5 class="mt-3 fw-bold">999 669 578</h5>
+        <p class="text-uppercase fw-semibold text-muted">Seguridad Ciudadana</p>
       </div>
+    </div>
   </div>
 </div>
 
+<!-- ==================== SECCIÓN OBRAS Y PROYECTOS ==================== -->
 <div class="container text-center py-5">
-  <hr><h1 class="mb-3">OBRAS Y PROYECTOS</h1><hr>
-  <div class="row justify-content-center">
-      <div class="col-6">
-          <div class="contact-box">
-              <img src="https://via.placeholder.com/100" alt="Policia Nacional" class="img-fluid rounded-circle">
-              <h5 class="mt-3">999 669 578</h5>
-              <p>POLICIA NACIONAL</p>
-          </div>
+  <hr class="w-50 mx-auto mb-4 border-warning border-3">
+  <h1 class="mb-3 text-warning fw-bold">OBRAS Y PROYECTOS</h1>
+  <hr class="w-50 mx-auto mb-5 border-warning border-3">
+
+  <div class="row justify-content-center g-4">
+    <div class="col-md-4 col-6">
+      <div class="p-4 bg-white rounded-4 shadow-sm">
+        <i class="bi bi-building text-danger fs-1"></i>
+        <h5 class="mt-3 fw-bold text-dark">OBRAS</h5>
+        <p class="text-muted">Detalles de obras realizadas.</p>
       </div>
-      <div class="col-6">
-          <div class="contact-box">
-              <img src="https://via.placeholder.com/100" alt="Seguridad Ciudadana" class="img-fluid rounded-circle">
-              <h5 class="mt-3">999 669 578</h5>
-              <p>SEGURIDAD CIUDADANA</p>
-          </div>
+    </div>
+
+    <div class="col-md-4 col-6">
+      <div class="p-4 bg-white rounded-4 shadow-sm">
+        <i class="bi bi-gear-wide-connected text-primary fs-1"></i>
+        <h5 class="mt-3 fw-bold text-dark">PROYECTOS</h5>
+        <p class="text-muted">Detalles de proyectos en ejecución.</p>
       </div>
+    </div>
   </div>
 </div>
+

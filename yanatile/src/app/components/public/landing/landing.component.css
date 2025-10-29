@@ -55,3 +55,31 @@ img.img-fluid {
 img.img-fluid:hover {
   transform: scale(1.03);
 }
+
+ .contact-box {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .contact-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+    .contact-icon {
+      font-size: 2.5rem;
+      color: #0d6efd;
+    }
+    h1 {
+      font-weight: 700;
+    }
+    hr {
+      width: 50%;
+      margin: 10px auto;
+      border-top: 3px solid #0d6efd;
+      opacity: 0.8;
+    }
+
+
+    

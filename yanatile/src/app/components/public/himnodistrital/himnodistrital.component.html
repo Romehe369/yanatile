@@ -1,38 +1,57 @@
-<div class="container main-container my-5">
-        <h1 class="text-center fw-bold page-title">
-            <i class="bi bi-music-note-list me-2"></i> HIMNO Y SÍMBOLOS DEL DISTRITO DE YANATILE
-        </h1>
+<!-- Header -->
+    <header class="header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">
+                HIMNO Y SÍMBOLOS DEL DISTRITO DE YANATILE
+            </h1>
+            <p class="lead">Municipalidad Distrital de Yanatile</p>
+        </div>
+    </header>
 
+    <!-- Main Content -->
+    <div class="container main-container my-5">
         <div class="row section-box p-4 p-lg-5">
+            <!-- Símbolos Visuales -->
             <div class="col-md-6 section-divider pe-md-4">
                 <h3 class="fw-bold text-center text-primary section-title">
                     <i class="bi bi-images me-2"></i> SÍMBOLOS VISUALES
                 </h3>
 
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="symbol-card text-center">
-                            <span class="badge-yanatile">IDENTIDAD</span>
-                            <h5 class="symbol-title">Escudo del Distrito de Yanatile</h5>
-                            <div class="symbol-placeholder">
-                                <i class="bi bi-shield-check"></i>
-                            </div>
-                            <p class="text-muted small">Representación oficial del Escudo que simboliza nuestra identidad y valores.</p>
-                        </div>
-                    </div>
+                <!-- Escudo del Distrito -->
+                <div class="col-12 mb-4">
+                    <div class="text-center p-4 symbol-card">
+                        <span class="badge bg-primary mb-2 px-3 py-2 text-uppercase">IDENTIDAD</span>
+                        <h5 class="symbol-title fw-bold mb-3">Escudo del Distrito de Yanatile</h5>
 
-                    <div class="col-12">
-                        <div class="symbol-card text-center">
-                            <span class="badge-yanatile">PATRIA</span>
-                            <h5 class="symbol-title">Bandera del Distrito de Yanatile</h5>
-                            <div class="symbol-placeholder">
-                                <i class="bi bi-flag"></i>
-                            </div>
-                            <p class="text-muted small">Pabellón distrital que representa nuestra unidad y orgullo.</p>
+                        <!-- Imagen -->
+                        <div class="symbol-image mb-3">
+                            <img src="Escudo_yana.png" alt="Escudo del Distrito de Yanatile" class="img-fluid rounded-3 shadow">
                         </div>
+
+                        <p class="text-muted small">
+                            Representación oficial del Escudo que simboliza nuestra identidad y valores.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bandera del Distrito -->
+                <div class="col-12">
+                    <div class="text-center p-4 symbol-card">
+                        <span class="badge bg-danger mb-2 px-3 py-2 text-uppercase">PATRIA</span>
+                        <h5 class="symbol-title fw-bold mb-3">Bandera del Distrito de Yanatile</h5>
+
+                        <!-- Imagen -->
+                        <div class="symbol-image mb-3">
+                            <img src="bandera.jpg" alt="Bandera del Distrito de Yanatile" class="img-fluid rounded-3 shadow">
+                        </div>
+
+                        <p class="text-muted small">
+                            Pabellón distrital que representa nuestra unidad y orgullo.
+                        </p>
                     </div>
                 </div>
                 
+                <!-- Materiales de Descarga -->
                 <div class="mt-4">
                     <h5 class="fw-bold text-center text-success mb-3">
                         <i class="bi bi-download me-2"></i> MATERIALES DE REFERENCIA
@@ -45,38 +64,23 @@
                             <i class="bi bi-file-earmark-music me-2"></i> DESCARGAR HIMNO DISTRITAL (MP3)
                         </a>
                     </div>
-                    
-                    <div class="audio-player mt-4">
-                        <h6 class="fw-bold text-center mb-3">Reproducir Himno</h6>
-                        <div class="audio-controls justify-content-center">
-                            <button class="play-btn">
-                                <i class="bi bi-play-fill"></i>
-                            </button>
-                            <div class="flex-grow-1">
-                                <div class="progress" style="height: 6px;">
-                                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="d-flex justify-content-between mt-1">
-                                    <small class="text-muted">0:00</small>
-                                    <small class="text-muted">3:45</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
+            <!-- Himno del Distrito -->
             <div class="col-md-6 ps-md-4">
                 <h3 class="fw-bold text-center text-primary section-title">
                     <i class="bi bi-music-note-beamed me-2"></i> HIMNO DEL DISTRITO DE YANATILE
                 </h3>
 
                 <div class="himno-letra">
-                    <p class="fw-bold text-center text-secondary mb-4">Sagradas notas del himno distrital</p>
+                    <p class="fw-bold text-center text-secondary mb-4">
+                        <i class="bi bi-quote me-1"></i>Sagradas notas del himno distrital<i class="bi bi-quote ms-1"></i>
+                    </p>
                     
                     <p class="himno-section text-success">I</p>
                     <p>
-                        Yanatileños, somos vencedores,<br>
+                        <span class="highlight">Yanatileños</span>, somos vencedores,<br>
                         luchando por nuestro pueblo y la unidad,<br>
                         varones y mujeres son héroes de este valle,<br>
                         junto a los antis y arrieros, unidos e indómitos<br>
@@ -87,9 +91,9 @@
                     </p>
                     
                     <div class="coro">
-                        <p class="fw-bold mb-2">CORO</p>
-                        <p class="mb-0">
-                            Yanatile, Yanatile, por el progreso y grandeza,<br>
+                        <p class="fw-bold mb-2 text-center">CORO</p>
+                        <p class="mb-0 text-center">
+                            <span class="highlight">Yanatile, Yanatile</span>, por el progreso y grandeza,<br>
                             con justicia y con dignidad,<br>
                             hacia el desarrollo y unidad,<br>
                             con honor y libertad.
@@ -98,7 +102,7 @@
 
                     <p class="himno-section text-success">II</p>
                     <p>
-                        Lacco Yavero, Megantoni, amazonias,<br>
+                        <span class="highlight">Lacco Yavero, Megantoni, amazonias</span>,<br>
                         con tu reserva y tu gran bastión,<br>
                         Santiago, Putucusi, Lacco y Chancamayo,<br>
                         son esos pueblos intangibles, de tu integridad,<br>
@@ -110,7 +114,7 @@
                     
                     <p class="himno-section text-success">III</p>
                     <p>
-                        Yanatile, Distrito de gran diversidad,<br>
+                        <span class="highlight">Yanatile</span>, Distrito de gran diversidad,<br>
                         Valle de Frutos y gran de riqueza,<br>
                         en tu diversidad, se forja nuestro progreso,<br>
                         que, junto a tus hombres, tus hombres de trabajo,<br>
@@ -120,12 +124,34 @@
                         que es la vida y pulmón del mundo
                     </p>
                 </div>
+                
+                <!-- Audio Player (Placeholder) -->
+                <div class="mt-4">
+                    <h5 class="fw-bold text-center text-primary mb-3">
+                        <i class="bi bi-play-circle me-2"></i> ESCUCHAR HIMNO
+                    </h5>
+                    <div class="bg-light p-3 rounded text-center">
+                        <i class="bi bi-music-note-beamed display-6 text-muted"></i>
+                        <p class="mt-2 text-muted">Reproductor de audio del Himno de Yanatile</p>
+                        <div class="progress mt-2" style="height: 6px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn btn-primary btn-sm me-2">
+                                <i class="bi bi-play-fill"></i> Reproducir
+                            </button>
+                            <button class="btn btn-outline-secondary btn-sm">
+                                <i class="bi bi-pause-fill"></i> Pausar
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
         <div class="row mt-4">
             <div class="col-12 text-center">
-                <p class="text-muted">
+                <p class="footer-note">
                     <i class="bi bi-heart-fill text-danger me-1"></i> 
                     Yanatile - Un distrito con identidad y orgullo para el mundo
                 </p>

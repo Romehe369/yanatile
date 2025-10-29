@@ -1,0 +1,10 @@
+.news-header {
+    background: url('/img/PLAZACAMPESINOS.webp'); /* Aquí se debe colocar la ruta correcta a tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* Ajusta la altura como lo necesites */
+}
+
+.text-white p {
+    font-size: 1.2rem;
+}

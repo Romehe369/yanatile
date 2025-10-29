@@ -1,170 +1,97 @@
- .main-container {
+.header {
+             background: linear-gradient(135deg, #2c3e50, #4a6491);
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .main-container {
             max-width: 1200px;
         }
         
-        .page-title {
-            position: relative;
-            padding-bottom: 1rem;
-            margin-bottom: 2.5rem;
-            color: var(--bs-yanatile-blue);
-        }
-        
-        .page-title:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 150px;
-            height: 4px;
-            background: linear-gradient(90deg, var(--bs-yanatile-blue), var(--bs-yanatile-green));
-            border-radius: 2px;
-        }
-        
         .section-box {
-            border-radius: 16px;
-            overflow: hidden;
-            border: none;
-            background: #fff;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
         }
         
         .section-divider {
-            border-right: 1px solid #e5e7eb;
+            border-right: 2px dashed #e9ecef;
         }
         
         .section-title {
-            position: relative;
-            padding-bottom: 0.75rem;
+            color: var(--primary-color);
             margin-bottom: 1.5rem;
-        }
-        
-        .section-title:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 3px;
-            background-color: currentColor;
-            border-radius: 2px;
-        }
-        
-        .symbol-card {
-            transition: all 0.3s ease;
-            border-radius: 12px;
-            overflow: hidden;
-            border: none;
-            background: #f8fafc;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            margin-bottom: 1.5rem;
-            padding: 1.5rem;
-        }
-        
-        .symbol-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(30, 64, 175, 0.12);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
         }
         
         .symbol-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--bs-yanatile-blue);
-            margin-bottom: 0.5rem;
+            color: var(--dark-color);
         }
         
-        .symbol-placeholder {
-            height: 180px;
-            background: linear-gradient(135deg, #e0f2fe 0%, #bbf7d0 100%);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 1rem 0;
-            border: 2px dashed #cbd5e1;
+        .symbol-image {
+            max-width: 300px;
+            margin: 0 auto;
+            transition: transform 0.3s;
         }
         
-        .symbol-placeholder i {
-            font-size: 3rem;
-            color: #64748b;
+        .symbol-image:hover {
+            transform: scale(1.03);
         }
         
-        .btn-download {
-            border-radius: 10px;
-            padding: 0.75rem 1.5rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .btn-download:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        .symbol-image img {
+            border: 1px solid #e9ecef;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
         }
         
         .himno-letra {
-            background: #f8fafc;
-            border-radius: 12px;
+            background-color: var(--light-color);
             padding: 1.5rem;
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        
-        .himno-letra p {
-            margin-bottom: 1rem;
-            line-height: 1.6;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-color);
         }
         
         .himno-section {
-            font-weight: 600;
+            font-weight: bold;
             margin-top: 1.5rem;
             margin-bottom: 0.5rem;
         }
         
         .coro {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            background-color: rgba(243, 156, 18, 0.1);
             padding: 1rem;
             border-radius: 8px;
             margin: 1.5rem 0;
-            text-align: center;
-            border-left: 4px solid #f59e0b;
+            border-left: 3px solid var(--accent-color);
         }
         
-        .badge-yanatile {
-            background: linear-gradient(135deg, var(--bs-yanatile-blue), var(--bs-yanatile-green));
-            color: white;
+        .btn-download {
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .badge {
             font-size: 0.75rem;
-            padding: 0.35rem 0.75rem;
-            border-radius: 50px;
-            margin-bottom: 0.5rem;
-            display: inline-block;
+            letter-spacing: 0.5px;
         }
         
-        .audio-player {
-            background: #f1f5f9;
-            border-radius: 10px;
-            padding: 1rem;
-            margin-top: 1.5rem;
+        .footer-note {
+            color: var(--dark-color);
+            font-style: italic;
         }
         
-        .audio-controls {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        
-        .play-btn {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--bs-yanatile-blue), var(--bs-yanatile-green));
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: none;
-            font-size: 1.25rem;
+        .highlight {
+            background-color: rgba(46, 134, 193, 0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
         }

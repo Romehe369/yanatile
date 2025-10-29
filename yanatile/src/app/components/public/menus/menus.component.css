@@ -1,0 +1,16 @@
+ .icon-box {
+      color: #6c757d; /* gris */
+      transition: all 0.2s ease;
+    }
+    .icon-box:hover {
+      color: #0d6efd; /* azul al pasar el mouse */
+      transform: translateY(-5px);
+    }
+    .icon-box i {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .icon-label {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
