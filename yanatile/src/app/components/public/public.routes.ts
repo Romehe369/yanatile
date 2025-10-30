@@ -9,6 +9,7 @@ import { HimnodistritalComponent } from './himnodistrital/himnodistrital.compone
 import { AgriculturaLocalComponent } from './agricultura-local/agricultura-local.component';
 import { CentrosPobladosComponent } from './centros-poblados/centros-poblados.component';
 import { FestividadesComponent } from './festividades/festividades.component';
+import { AtractivosComponent } from './atractivos/atractivos.component';
 export const public_routes: Routes = [
     {
         path: '',
@@ -25,7 +26,8 @@ export const public_routes: Routes = [
             {   path:'himno', component: HimnodistritalComponent},
             {   path:'agricultura-local', component:AgriculturaLocalComponent},
             {   path:'centros-poblados', component:CentrosPobladosComponent},
-            {   path:'festividades', component:FestividadesComponent}
+            {   path:'festividades', component:FestividadesComponent},
+            {   path:'atractivos', component:AtractivosComponent}
         ]
     }
 ];
