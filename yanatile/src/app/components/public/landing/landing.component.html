@@ -1,12 +1,23 @@
 <header id="header" class="position-relative text-white text-center">
   <div class="intro position-relative">
     <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+
     <div class="container position-relative py-5">
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-10 intro-text py-5">
-          <p class="fs-3 fw-light text-uppercase mb-2">Municipalidad Distrital</p>
+          <p class="fs-3 fw-light text-uppercase mb-2">Municipalidad Distrital De</p>
           <h1 class="display-1 fw-bold mb-4 text-light">Yanatile</h1>
-          <a routerLink="/historia" class="btn btn-lg btn-primary rounded-pill shadow-sm px-5 py-3">
+
+          <!-- Reloj y fecha -->
+          <div class="clock-container my-4">
+            <div class="clock fs-1 fw-bold">{{ currentTime }}</div>
+            <div class="date fs-4 fw-light">{{ currentDate }}</div>
+          </div>
+
+         
+        </div>
+        <div class="container-fluid">
+           <a routerLink="/historia" class="btn btn-lg btn-primary rounded-pill shadow-sm px-5 py-3 mt-3">
             Descubre nuestra historia
           </a>
         </div>
@@ -14,38 +25,40 @@
     </div>
   </div>
 </header>
+
 <app-menus></app-menus>
 <!-- Sección de Bienvenida -->
-<div class="container my-5 py-4">
-  <div class="row align-items-center g-5">
-    <div class="col-md-6">
-      <h1 class="text-center mb-4 fw-bold text-primary">La Municipalidad Distrital de Yanatile</h1>
-      <p class="text-secondary text-justify lh-lg">
+<div class="container-fluid bg-dark text-light py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 px-lg-5 px-md-4 px-3">
+      <h1 class="text-center mb-4 fw-bold text-warning">
+        La Municipalidad Distrital de Yanatile
+      </h1>
+
+      <p class="text-light text-justify lh-lg">
         Les da la más cordial bienvenida a nuestro portal web institucional 2023-2026, con la intención de ofrecerles un espacio de información y comunicación permanente. Aquí podrán conocer, con total transparencia, las obras, proyectos y actividades que realizamos para impulsar el desarrollo de nuestro distrito. 
         Esta gestión ha iniciado el camino hacia la modernidad y sostenibilidad, apoyándose en ejes estratégicos como obras públicas, desarrollo humano, participación vecinal y preservación del medio ambiente. 
-        <strong>¡La gestión del pueblo, siempre unidos lograremos el desarrollo de nuestro distrito, hermanos!</strong>
+        <strong class="text-info">¡La gestión del pueblo, siempre unidos lograremos el desarrollo de nuestro distrito, hermanos!</strong>
       </p>
 
-      <div class="text-center p-3">
-        <h1 class="display-5 text-secondary fw-bold">WILIAN HUALLPA</h1>
-        <p class="fs-5 text-muted mb-1">ALCALDE</p>
-        <h5 class="text-secondary text-uppercase mb-3">¡Un Gobierno del Pueblo...!</h5>
-        <p class="text-muted">Gestión 2023-2026</p>
-        <a routerLink="/alcalde" class="btn btn-outline-primary btn-lg rounded-pill mt-3 shadow-sm">
+      <div class="text-center p-3 mt-4">
+        <h1 class="display-5 fw-bold text-info">WILIAN HUALLPA</h1>
+        <p class="fs-5 text-light mb-1">ALCALDE</p>
+        <h5 class="text-uppercase mb-3 text-warning">¡Un Gobierno del Pueblo...!</h5>
+        <p class="text-light-50">Gestión 2023-2026</p>
+        <a routerLink="/alcalde" class="btn btn-outline-info btn-lg rounded-pill mt-3 shadow-sm">
           Ver más
         </a>
       </div>
     </div>
 
     <div class="col-md-6 text-center">
-      <img src="AlcaldeMDY.png" alt="Alcalde de Yanatile" class="img-fluid rounded shadow-lg">
+      <img src="AlcaldeMDY.png" alt="Alcalde de Yanatile" class="img-fluid">
     </div>
   </div>
 </div>
+
 <app-regidores></app-regidores>
-
-
-
 
 <div class="container text-center py-5"> 
     <hr>
@@ -88,56 +101,74 @@
 </div>
 
 <!-- ==================== SECCIÓN NOTICIAS ==================== -->
-<div class="container my-5">
-  <hr class="w-50 mx-auto mb-4 border-primary border-3">
-  <h1 class="mb-4 text-center fw-bold text-primary">NOTICIAS Y COMUNICADOS</h1>
-  <hr class="w-50 mx-auto mb-5 border-primary border-3">
+<section class="container my-5">
+  <h2 class="text-center mb-5 fw-bold">Noticias</h2>
 
-  <div class="row g-4">
-    <div class="col-md-3 col-sm-6">
-      <div class="card h-100 shadow-sm border-0">
-        <img src="./assets/img/team-1.jpg" class="card-img-top rounded-top" alt="Noticia 1">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <!-- Noticia 1 -->
+    <div class="col">
+      <div class="card h-100 bg-light border-0 shadow-sm">
+        <img src="voladura.jpg" alt="Noticia 1" class="card-img-top rounded-top">
         <div class="card-body">
-          <h5 class="card-title text-primary">Municipalidad</h5>
-          <p class="card-text">Trabajo Articulado Entre La Municipalidad Y Agrorural Cusco.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 col-sm-6">
-      <div class="card h-100 shadow-sm border-0">
-        <img src="./assets/img/team-2.jpg" class="card-img-top rounded-top" alt="Noticia 2">
-        <div class="card-body">
-          <h5 class="card-title text-primary">EN MENDOZAYOQ</h5>
-          <p class="card-text">
-            La oficina de registro civil de la municipalidad distrital de Yanatile y RENIEC,
-            realizó más de 102 trámites documentarios de DNI.
+          <h5 class="fw-bold">La Municipalidad Distrital de Yanatile continúa atendiendo emergencias con voladura controlada</h5>
+          <p class="text-muted">
+            Se realizaron trabajos de limpieza y remoción de rocas en la vía principal del distrito para garantizar la
+            seguridad de los transportistas y vecinos.
           </p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Ver más</a>
         </div>
       </div>
     </div>
 
-    <div class="col-md-3 col-sm-6">
-      <div class="card h-100 shadow-sm border-0">
-        <img src="./assets/img/team-3.jpg" class="card-img-top rounded-top" alt="Noticia 3">
+    <!-- Noticia 2 -->
+    <div class="col">
+      <div class="card h-100 bg-light border-0 shadow-sm">
+        <img src="huachibamba.jpg" alt="Noticia 2" class="card-img-top rounded-top">
         <div class="card-body">
-          <h5 class="card-title text-primary">Título Noticia 3</h5>
-          <p class="card-text">Descripción breve de la noticia 3.</p>
+          <h5 class="fw-bold">Alcalde Wilian Huallpa Quispe inauguró cobertura del techo en Huachibamba</h5>
+          <p class="text-muted">
+            La obra beneficiará a los estudiantes de la institución educativa, mejorando las condiciones de aprendizaje
+            y bienestar.
+          </p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Ver más</a>
         </div>
       </div>
     </div>
 
-    <div class="col-md-3 col-sm-6">
-      <div class="card h-100 shadow-sm border-0">
-        <img src="./assets/img/team-4.jpg" class="card-img-top rounded-top" alt="Noticia 4">
+    <!-- Noticia 3 -->
+    <div class="col">
+      <div class="card h-100 bg-light border-0 shadow-sm">
+        <img src="carnaval.jpg" alt="Noticia 3" class="card-img-top rounded-top">
         <div class="card-body">
-          <h5 class="card-title text-primary">Título Noticia 4</h5>
-          <p class="card-text">Descripción breve de la noticia 4.</p>
+          <h5 class="fw-bold">Concurso de danzas “Carnavales 2025”</h5>
+          <p class="text-muted">
+            Con la participación de distintas comunidades, se celebró con alegría y tradición los Carnavales Yanatileños 2025.
+          </p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Noticia 4 -->
+    <div class="col">
+      <div class="card h-100 bg-light border-0 shadow-sm">
+        <img src="rendicion01.jpg" alt="Noticia 4" class="card-img-top rounded-top">
+        <div class="card-body">
+          <h5 class="fw-bold">¡Tu voz cuenta! Presupuesto participativo basado en resultados 2026</h5>
+          <p class="text-muted">
+            La Municipalidad de Yanatile invita a la ciudadanía a participar activamente en el proceso de formulación del
+            presupuesto municipal.
+          </p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Ver más</a>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+
+
+
+
 
 <!-- ==================== SECCIÓN YANATILE PARA EL MUNDO ==================== -->
 <div class="container text-center py-5">
