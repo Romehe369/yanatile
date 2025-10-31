@@ -13,6 +13,11 @@ export const routes: Routes = [
       loadChildren: () => 
       import('./components/public/servicios/servicios.routes').then(m => m.servicios_routes)
     },
+    {   
+      path: 'transparencia', 
+      loadChildren: () => 
+      import('./components/public/transparencia/transparencia.routes').then(m => m.transparencia_routes)
+    },
     // se activa cuando ninguna otra ruta coincide y llama al path:''
     {   path: '**', redirectTo: '' }
 ];
